@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import "vars.scss";
+
+/* RESET CSS
+ * --------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration:none;
+}
+fieldset,img {
+  border: 0;
+}
+strong{
+  font-weight: bold;
+}
+ol,ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin:0;
+  padding:0;
+}
+i {
+  display: flex;
+  align-items: center;
+}
+* {
+  box-sizing: border-box;
+ }
+/* BASE CSS
+ * --------------------------------------- */
+
+body {
+  background-color: var(--c-primary);
+  color: var(--c-white);
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  scroll-behavior: smooth;
+  letter-spacing: 1px;
+  overflow-x: hidden;
+}
+
+body::selection {
+  background: var(--c-secondary);
+  color: var(--c-white);
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  color: var(--c-grey);
+  font-size: 18px;
+}
+
+::-webkit-scrollbar
+{
+  width: 5px;
+  height: 7px;
+}
+::-webkit-scrollbar-track
+{
+  background: var(--c-primary);
+}
+::-webkit-scrollbar-thumb
+{
+  background: var(--c-secondary);
+  height:10px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-track-piece {
+  height: 30px;
+}
+
+/* Import SCSS
+ * --------------------------------------- */
+
+@import "container.scss";
+@import "app.scss";

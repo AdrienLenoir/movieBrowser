@@ -1,0 +1,61 @@
+.promoted-movie {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: var(--v-border-radius);
+  overflow: hidden;
+  display: block;
+  transition: transform .3s;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    transform: translateX(10px);
+  }
+
+  .spotlight-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: auto;
+    min-width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-radius: var(--v-border-radius);
+    background-color: var(--c-grey-t-30);
+    border: 2px solid var(--c-grey-t-30);
+    backdrop-filter: blur(5px);
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      width: 50px;
+      background: var(--v-linear-gradient);
+      color: var(--c-white);
+      border-radius: 50%;
+      margin-right: 35px;
+
+      .play-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2px;
+        font-size: 20px;
+      }
+    }
+
+    .text {
+      p:first-child {
+        font-size: 15px;
+        color: var(--c-grey);
+      }
+      p {
+        color: var(--c-white);
+      }
+    }
+  }
+}

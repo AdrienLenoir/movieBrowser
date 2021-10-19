@@ -1,0 +1,30 @@
+.discover-movie {
+  position: relative;
+  width: 100%;
+  display: block;
+  transition: transform .3s;
+  user-select: none;
+
+  &:hover {
+    transform: translateY(-10px);
+  }
+
+  &-image {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    border-radius: var(--v-border-radius);
+  }
+
+
+  &-title {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 16px;
+    color: var(--c-white);
+
+    span {
+      color: var(--c-grey);
+    }
+  }
+}

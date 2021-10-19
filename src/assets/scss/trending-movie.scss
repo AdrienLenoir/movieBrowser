@@ -1,0 +1,58 @@
+.trending-movie {
+  position: relative;
+  width: 100%;
+  border-radius: var(--v-border-radius);
+  overflow: hidden;
+  margin: 10px;
+  height: 450px;
+  display: block;
+  transition: transform .3s;
+  user-select: none;
+  background-position: center;
+  background-size: cover;
+
+  &:hover {
+    transform: translateY(-15px);
+  }
+
+  &-title {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    padding: 25px 10px;
+    width: calc(100% - 40px);
+    border-radius: var(--v-border-radius);
+    background-color: var(--c-grey-t-30);
+    border: 2px solid var(--c-grey-t-30);
+    backdrop-filter: blur(5px);
+  }
+
+  &-note {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--c-grey-t-30);
+    border: 2px solid var(--c-grey-t-30);
+    backdrop-filter: blur(5px);
+
+    p {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 22px;
+
+      svg {
+        color: #f3cb50;
+        margin-right: 10px;
+      }
+    }
+
+    p:first-child {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+  }
+}

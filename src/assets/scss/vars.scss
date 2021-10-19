@@ -1,0 +1,18 @@
+:root {
+  --c-primary: #15141F;
+
+  --c-secondary: #FA6B51;
+  --c-secondary-light: #ef8676;
+
+  --c-white: #FFFFFF;
+  --c-white-t-25: rgba(255, 255, 255, .25);
+  --c-white-t-10: rgba(255, 255, 255, .1);
+  --c-grey: #cbcbcb;
+  --c-grey-t-30: rgba(0, 0, 0, .3);
+  --c-grey-t-20: rgba(0, 0, 0, .2);
+
+  --c-tertiary: #211F30;
+
+  --v-border-radius: 30px;
+  --v-linear-gradient: linear-gradient(45deg, var(--c-secondary), var(--c-secondary-light));
+}
